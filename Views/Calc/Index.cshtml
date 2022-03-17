@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+	
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+ <h2 span style = "margin: 15px; margin-left:0">Form parameters parsing demo</h2>
+    <ul>
+       @* <li span style ="text-decoration: none;"> @Html.ActionLink("Using Model Calc", "PassUsingModel")</li>*@
+    <li> <a span style ="text-decoration: none;" asp-controller="Calc" asp-action="Manual">Manual parsing in single action</a></li>
+    <li> <a span style ="text-decoration: none;" asp-controller="Calc" asp-action="ManualWithSeparateHandlers">Manual parsing in separate actions</a></li>
+    <li> <a span style ="text-decoration: none;" asp-controller="Calc" asp-action="ModelBindingInParameters">Model binding (parameters)</a></li>
+    <li> <a span style ="text-decoration: none;" asp-controller="Calc" asp-action="ModelBindingInSeparateModel">Model binding (separate model)</a></li>
+    </ul>
